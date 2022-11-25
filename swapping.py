@@ -1,0 +1,5 @@
+string=input("enter the string;")
+n1=string(int(input("enter a string")))
+n2=string(int(input("enter a string")))
+print(str[0]+str[1].extension[-1])
+print(string)

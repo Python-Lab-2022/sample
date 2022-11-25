@@ -1,0 +1,5 @@
+a=int(input("enter anumber"))
+b=int(input("enter anumber"))
+c=int(input("enter anumber"))
+d=max(a,b,c)
+print(d)
