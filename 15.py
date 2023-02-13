@@ -1,3 +1,6 @@
-first=str(input("enter the first string:"))
-second=str(input("enter the second string:"))
-print("The result string is",second[0]+first[1:]+" "+first[0]+second[1:])
+str1=str(input("enter a string:"))
+str2=str(input("enter a string:"))
+start=str1[0]
+end=str2[0]
+result=end+str1[1:]+" "+start+str2[1:]
+print("the new string after swaping first two characters of both string:",result)

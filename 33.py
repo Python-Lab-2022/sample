@@ -1,25 +1,18 @@
-Python 3.7.5 (default, Dec  9 2021, 17:04:37) 
-[GCC 8.4.0] on linux
-Type "help", "copyright", "credits" or "license()" for more information.
->>> class bank:
-    def __init__(self,acnt,nam,typ,amt):
-        self.ac=acnt
-        self.name=nam
-        self.type=typ
-        self.amount=amt
-    def printamt(self):
-        print("acc name:",self.name)
-        print("acc no:",self.ac)
-        print("acc type:",self.type)
-        print("amount:",self.amount)
-    def withdraw(self,w1):
-        return(self.amount-w1)
-n=input("enter your name:")
-t=input("enter the acc type:")
-a=int(input("enter the acc no:"))
-am=int(input("enter the amount:"))
-obj=bank(a,n,t,am)
-print("account details")
-obj.printamt()
-w=int(input("enter amount to withdraw:"))
-print("balance=",obj.withdraw(w))
+
+class area:
+    def __init__(self,m1,m2):
+        self.l=m1
+        self.b=m2
+    def __gt__(self,other):
+        r1=self.l*self.b
+        r2=other.l*other.b
+        if(r1>r2):
+          return 1
+        else:
+          return 0
+s1=area(1,5)
+s2=area(2,6)
+if(s1>s2):
+    print("area of rect1 is greater")
+else:
+    print("area of rect2 is greater")

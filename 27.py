@@ -1,11 +1,12 @@
-str=input("enter the list of words(space seperated):")
-list=str.split()
+import math
+n=int(input("enter the no.of word in list"))
+list=[]
+print("enter the words:")
+for i in range(0,n):
+    list.append(str(input()))
 print(list)
-max1=len(list[0])
-temp=list[0]
 for i in list:
-    if(len(i)>max1):
-       max1=len(i)
-       temp=i
-print("Longest word in the list:",temp)
-print("Length of",temp,"is:",len(temp))
+    a=len(i)
+    print("length of",i,"is",a)
+    b=max(list)
+print("length of longest word",len(b))

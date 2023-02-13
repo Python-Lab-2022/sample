@@ -1,10 +1,9 @@
-dict={}
-string1=input("Enter a string")
-for n in string1:
-    if n in dict:
-        dict[n]+=1
+a=str(input("enter a string:"))
+print(a)
+count={}
+for i in a:
+    if i in count:
+        count[i]+=1
     else:
-        dict[n]=1
-print("Character frequency")
-for k,v in dict.items():
-    print(k,v)
+        count[i]=1
+print("count of all characters is ",count )

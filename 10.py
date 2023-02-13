@@ -1,9 +1,4 @@
-num1=int(input("Enter the first number"))
-num2=int(input("Enter the second number"))
-num3=int(input("Enter the third number"))
-if num1>num2 and num1>num3:
-    print(num1, "is grater")
-elif num2>num3:
-    print(num2,"is grater")
-else:
-    print(num3,"is grater")
+
+filename = input("Input the Filename: ")
+f_extns = filename.split(".")
+print ("The extension of the file is : " + repr(f_extns[-1]))

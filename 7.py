@@ -1,4 +1,6 @@
 string=str(input("enter the string:"))
-print(string)
-string=string[0]+string[1:].replace(string[0],"$")
-print(string)
+print("the string is ",string)
+start=string[0]
+end=string[-1]
+result=end+string[1:-1] + start
+print("the result is ",result)

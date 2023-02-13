@@ -1,3 +1,4 @@
+
 list=[]
 n=int(input("enter number of elements:"))
 for i in range(0,n):

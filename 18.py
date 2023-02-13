@@ -1,7 +1,4 @@
-a=int(input("enter the first number"))
-b=int(input("enter the second number"))
-for i in range(1,min(a,b)+1):
-      if(a%i==0 and b%i==0):
-          gcd=i
-print("GCD of",a,"and",b,"is",gcd)
-      
+import math
+n1=int(input("enter the first number:"))
+n2=int(input("enter the second number:"))
+print("gcd of",n1,"and",n2,"is:",math.gcd(n1,n2))

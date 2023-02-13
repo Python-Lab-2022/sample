@@ -1,19 +1,34 @@
-class time:
-    def __init__(self,h,m,s):
-        self.hr=h
-        self.min=m
-        self.sec=s
-    def __add__(self,other):
-        tempsec=self.sec+other.sec
-        tempmin=tempsec/60
-        self.sec=int(tempsec%60)
-        self.min=self.min+other.min+tempmin
-        temphr=self.min/60
-        self.min=int(self.min%60)
-        self.hr=int(self.hr+other.hr+temphr)
-        return time(self.hr,self.min,self.sec)
-    def __str__(self):
-        return str(self.hr)+'hr '+str(self.min)+'min '+str(self.sec)+'sec'
-t1=time(5,60,4)
-t2=time(2,4,4)
-print(t1+t2)
+class publisher:
+    def __init__(self,pname):
+        self.pname=pname
+    def display(self):
+        print("Name:",self.pname)
+class book(publisher):
+    def __init__(self,pname,bname,author):
+        self.pname=pname
+        self.bname=bname
+        self.author=author
+    def display(self):
+        print("pname:",self.pname)
+        print("bname:",self.bname)
+        print("author:",self.author)
+class python(book):
+    def __init__(self,pname,bname,author,page,price):
+        self.pname=pname
+        self.bname=bname
+        self.author=author
+        self.page=page
+        self.price=price
+    def display(self):
+        print("Publisher Name:",self.pname)
+        print("Book Name:",self.bname)
+        print("Author:",self.author)
+        print("Page:",self.page)
+        print("Price:",self.price)
+n=input("Enter Publisher:")
+b=input("Enter Book Name:")
+t=input("Enter Author Name:")
+p=int(input("Enter Page No:"))
+pr=int(input("Enter Price:"))
+obj=python(n,b,t,p,pr)
+obj.display()

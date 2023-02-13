@@ -1,3 +1,4 @@
+
 list1=[]
 list2=[]
 a=[]
@@ -11,8 +12,3 @@ for i in list1:
     if i not in list2:
         a.append(i)
 print(a)
-
-    
-        
-            
-            
